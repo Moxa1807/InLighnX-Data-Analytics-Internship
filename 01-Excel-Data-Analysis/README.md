@@ -1,78 +1,83 @@
-# 📊 E-Commerce Sales & Profitability Dashboard
+# 📈 Amazon Sales Dashboard
 
 ## 📌 Project Overview
 
-This project focuses on developing an interactive Power BI dashboard to analyze order-level e-commerce data across different Indian states, product categories, sub-categories, and payment modes.
+This project involved developing a dynamic and interactive sales-performance dashboard in Microsoft Excel.
 
-The objective was to identify the key factors contributing to sales and profitability and present the findings through an interactive business intelligence dashboard.
+The dashboard analyzes sales performance across regions, states, cities, and product categories, enabling stakeholders to quickly identify top-performing markets, products, and sales opportunities.
 
 ---
 
 ## 🎯 Project Objective
 
-The main objective of this project was to:
+The main objectives were to:
 
-- Analyze overall e-commerce sales and profitability.
-- Identify top-performing states.
-- Compare sales performance across product categories and sub-categories.
-- Analyze customer payment mode preferences.
-- Track important business KPIs.
-- Create an interactive dashboard to support data-driven decision-making.
+- Analyze regional sales performance.
+- Compare state-wise sales.
+- Identify top-performing products.
+- Analyze city-wise sales trends.
+- Track sales and unit performance against targets.
+- Build an interactive Excel dashboard.
 
 ---
 
 ## 📂 Dataset
 
-The dataset consisted of two related tables:
+The dataset, `Sales_Data_1.xlsx`, contained sales transaction records across multiple sheets.
 
-### Orders Table
+Key fields included:
 
-- 500 orders
-- Order ID
-- Order Date
-- Customer Name
-- State
+- Date of Sale
+- Sales Representative
+- Product Category
+- Units Sold
+- Price
+- Total Sales
 - City
+- State
+- Region
+- Day of the Week
 
-### Order Details Table
+The dataset covered:
 
-- 1,500 line items
-- Order ID
-- Amount
-- Profit
-- Quantity
-- Category
-- Sub-Category
-- Payment Mode
-
-The two tables were connected using **Order ID** as the common key.
+- 23 cities
+- 5 major states
+- Multiple Nestle product categories
 
 ---
 
 ## 🛠 Tools & Technologies
 
-- Power BI
-- Power Query
-- DAX
-- Data Modeling
-- Data Visualization
+- Microsoft Excel
+- Pivot Tables
+- Pivot Charts
+- SUMIFS
+- AVERAGEIFS
+- Slicers
+- Conditional Formatting
+- Map Charts
+- Interactive Dashboard Design
 
 ---
 
 ## 🔄 Project Workflow
 
 ```text
-Data Import
+Raw Data
     ↓
-Data Validation & Cleaning
+Data Cleaning & Validation
     ↓
-Data Modeling
+Dynamic Formula Tables
     ↓
-DAX Measures
+Pivot Tables
     ↓
-Interactive Visualizations
+Data Visualization
     ↓
-Dashboard Development
+KPI Development
+    ↓
+Interactive Slicers
+    ↓
+Dashboard
     ↓
 Business Insights
 ```
@@ -81,25 +86,31 @@ Business Insights
 
 ## 🧹 Data Preparation
 
-The following data preparation activities were performed:
+The raw Sales Data sheet was cleaned and validated by:
 
-- Checked for duplicate Order IDs.
-- Verified date formats.
-- Checked data quality.
-- Confirmed the availability of Amount and Profit values.
-- Created a relationship between Orders and Order Details using Order ID.
+- Removing blank and unnamed columns.
+- Verifying date formats.
+- Checking product categories.
+- Validating numerical fields.
+- Ensuring consistency across records.
 
 ---
 
-## 📐 Key DAX Measures
+## 📐 Excel Analysis
 
-The dashboard included measures for:
+Dynamic summary tables were developed using:
 
-- Total Sales
-- Total Profit
-- Profit Margin %
-- Average Order Value
-- Order Count
+- `SUMIFS`
+- `AVERAGEIFS`
+
+These were used to analyze:
+
+- Total sales by region.
+- Total sales by state.
+- Sales by product category.
+- Sales by city.
+
+Pivot Tables were also used to identify top-performing products, states, and cities.
 
 ---
 
@@ -107,51 +118,94 @@ The dashboard included measures for:
 
 The dashboard included:
 
-- KPI cards for Total Sales, Total Profit, and Order Count.
-- State-wise sales analysis.
-- Category and sub-category performance.
-- Payment mode analysis.
-- Interactive slicers for:
-  - State
-  - Category
-  - Payment Mode
+- Total Sales KPI.
+- Total Units Sold KPI.
+- Number of Cities KPI.
+- Target achievement indicators.
+- City-wise sales trend line chart.
+- State-wise geographical map chart.
+- Product performance bar chart.
+- KPI progress doughnut charts.
+- Product Category slicer.
+- State slicer.
+
+---
+
+## 🎨 Dashboard Design
+
+The dashboard was designed as a single-page interactive report using:
+
+- Orange and dark visual theme.
+- Rounded borders.
+- Subtle shadows.
+- Conditional formatting.
+- Interactive slicers.
+- KPI summary cards.
 
 ---
 
 ## 🔑 Key Insights
 
-- Total sales across the 500 orders were approximately **₹4.38 lakh**, with total profit of approximately **₹36,963**.
-- The overall profit margin was approximately **8.4%**.
-- The average order value was approximately **₹875.50**.
-- **Maharashtra** was the highest-performing state by sales with approximately **₹1,02,498**.
-- Maharashtra was followed by **Madhya Pradesh (₹87,463)** and **Uttar Pradesh (₹38,362)**.
-- **Electronics** was the leading category by sales with approximately **₹1,66,267**.
-- **Clothing** and **Furniture** followed with approximately **₹1,44,323** and **₹1,27,181**, respectively.
-- **Printers** and **Bookcases** were among the most profitable sub-categories.
-- **Cash on Delivery (COD)** was the most-used payment mode, followed by UPI and Debit Card.
+### Sales Performance
+
+Total sales reached approximately **₹10.23 million**, achieving **81% of the ₹12.58 million target**.
+
+### Unit Sales
+
+Approximately **33.87K units** were sold, representing **92% of the 36.92K unit target**.
+
+### Geographic Performance
+
+Sales were recorded across **23 cities**.
+
+The top-performing states were:
+
+1. Maharashtra – approximately ₹17,79,810
+2. Delhi – approximately ₹17,64,426
+3. West Bengal – approximately ₹9,29,958
+4. Karnataka – approximately ₹8,11,461
+5. Gujarat – approximately ₹6,85,672
+
+### Product Performance
+
+The top products by units sold included:
+
+- Nestle Smarties Pop-Up – 5,267 units
+- Nestle Fab – 4,370 units
+- Nestle Aero Mint Pattz – 4,092 units
+
+### City-Level Performance
+
+The analysis showed significant variation in sales across cities, with some cities generating substantially higher revenue than others.
 
 ---
 
 ## 💡 Business Takeaways
 
-The analysis indicates that sales performance was concentrated in a few key states and product categories. Maharashtra emerged as a major revenue contributor, while Electronics generated the highest category-level sales.
+The dashboard shows strong sales performance but also highlights a gap between actual performance and target benchmarks.
 
-The high usage of Cash on Delivery also suggests that payment preferences should be considered when planning customer acquisition and payment strategies.
+The findings suggest opportunities to:
+
+- Focus on underperforming regions.
+- Strengthen sales strategies in lower-performing cities.
+- Promote high-performing products.
+- Improve performance toward 100% target achievement.
+- Expand into markets with growth potential.
 
 ---
 
-
 ## 🎓 Learning Outcomes
 
-Through this project, I gained practical experience in:
-
-- Power BI data modeling.
-- Data cleaning and validation.
-- DAX measure creation.
+- Advanced Excel functions.
+- SUMIFS and AVERAGEIFS.
+- Pivot Tables.
+- Pivot Charts.
+- Interactive slicers.
 - KPI development.
-- Interactive dashboard design.
-- Business-focused data analysis.
-- Converting raw data into actionable insights.
+- Dashboard design.
+- Conditional formatting.
+- Business performance analysis.
+- Data-driven decision-making.
 
 ---
 
