@@ -1,1 +1,154 @@
-ddd
+# 🛍️ Shopify Sales & Customer Analysis Dashboard
+
+## 📌 Project Overview
+
+This project involved developing an interactive Power BI dashboard to analyze Shopify order-line data for an online footwear and accessories store.
+
+The dashboard focuses on revenue performance, product performance, payment gateway usage, order trends, and key business KPIs.
+
+---
+
+## 🎯 Project Objective
+
+The main objectives were to:
+
+- Analyze overall Shopify revenue.
+- Identify top-performing product types.
+- Analyze order volume by payment gateway.
+- Track average order value and tax collected.
+- Study short-term sales trends.
+- Build an interactive dashboard for business performance monitoring.
+
+---
+
+## 📂 Dataset
+
+The dataset, `Shopify_Sales.xlsx`, contained:
+
+- 7,431 order-line records
+- 19 fields
+
+Important fields included:
+
+- Order Number
+- Billing Address
+- Currency
+- Customer ID
+- Invoice Date
+- Gateway
+- Product Type
+- Quantity
+- Subtotal Price
+- Total Price (USD)
+- Total Tax
+
+A data terminology reference was also reviewed to understand technical fields such as Gateway, Variant ID, and Admin GraphQL API ID.
+
+---
+
+## 🛠 Tools & Technologies
+
+- Power BI
+- Power Query
+- DAX
+- Data Modeling
+- Data Visualization
+
+---
+
+## 🔄 Project Workflow
+
+```text
+Dataset & Data Terminology Review
+    ↓
+Data Cleaning
+    ↓
+Date Standardization
+    ↓
+Date Table Creation
+    ↓
+DAX Measures
+    ↓
+Dashboard Development
+    ↓
+Revenue & Product Analysis
+    ↓
+Business Insights
+```
+
+---
+
+## 🧹 Data Preparation
+
+The data preparation process included:
+
+- Reviewing the data terminology reference.
+- Identifying missing Product ID values.
+- Identifying missing Variant ID values.
+- Excluding incomplete product-level records from product breakdowns.
+- Retaining relevant records for overall revenue calculations.
+- Standardizing Invoice Date.
+- Creating a date table for time-based analysis.
+
+---
+
+## 📐 Key Measures
+
+The dashboard included:
+
+- Total Revenue (USD)
+- Total Orders
+- Average Order Value
+- Tax Collected
+
+---
+
+## 📊 Dashboard Features
+
+The dashboard analyzed:
+
+- Revenue by Product Type.
+- Order volume by Payment Gateway.
+- Weekly sales trends.
+- Key performance indicators.
+
+---
+
+## 🔑 Key Insights
+
+- The dataset generated approximately **US$4.60 million in revenue** across 7,431 orders.
+- **Running Shoes** were the highest-revenue product type with approximately **US$1.62 million**.
+- **Tennis Shoes** generated approximately **US$972,000**.
+- **Walking Shoes** generated approximately **US$688,000**.
+- Footwear categories clearly dominated the product portfolio.
+- **Shopify Payments** was the most-used payment gateway, accounting for approximately **4,296 of 7,431 orders**.
+- PayPal and Gift Card redemptions were the next most-used payment methods.
+- The dataset covered a concentrated period from **18 March to 24 March 2025**, making it more suitable for short-term trend analysis than long-term seasonality analysis.
+
+---
+
+## 💡 Business Takeaways
+
+The analysis highlights the strong contribution of footwear products, particularly Running Shoes, to overall revenue.
+
+The dominance of Shopify Payments also indicates that payment gateway performance and customer payment preferences are important factors for monitoring the online store's operations.
+
+---
+
+
+## 🎓 Learning Outcomes
+
+- Power BI data preparation.
+- DAX measure creation.
+- Date table development.
+- KPI design.
+- Revenue analysis.
+- Payment gateway analysis.
+- Interactive dashboard development.
+- Business insight generation.
+
+---
+
+## 👨‍💻 Author
+
+**Moxa Shah**
